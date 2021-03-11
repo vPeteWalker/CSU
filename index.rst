@@ -64,18 +64,17 @@ Agenda
 - Introductions
 - Nutanix Presentation
 - Workshop
-   - Nutanix Tech Overview Lab
-	- Storage Configuration Lab
-	- Networking Configuration lab
-	- Deploying Workloads Lab
-	- Managing Workloads Lab
-	- Starting with Files
-	- SMB File Share
-	- NFS export
-	- Right-sizing VMs with prism Pro
-	- Software Based Encryption
-	- Failure Scenarios
-
+   Nutanix Tech Overview Lab
+	Storage Configuration Lab
+	Networking Configuration lab
+	Deploying Workloads Lab
+	Managing Workloads Lab
+	Starting with Files
+	SMB File Share
+	NFS export
+	Right-sizing VMs with prism Pro
+	Software Based Encryption
+	Failure Scenarios
 
 Introductions
 +++++++++++++
@@ -230,7 +229,7 @@ Login to: https://frame.nutanix.com/x/labs
 **Non-Employees** - Use **Lab Access User** Credentials
 
 Parallels VDI
-.................
+.............
 
 PHX Based Clusters Login to: https://xld-uswest1.nutanix.com
 
@@ -240,7 +239,7 @@ RTP Based Clusters Login to: https://xld-useast1.nutanix.com
 **Non-Employees** - Use **Lab Access User** Credentials
 
 Employee Pulse Secure VPN
-..........................
+.........................
 
 Download the client:
 

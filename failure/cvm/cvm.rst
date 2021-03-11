@@ -7,10 +7,9 @@ In this section, we will be simulating a Controller Virtual Machine (CVM) failur
 
 There are two example scenarios you can run to demonstrate the cluster resiliency during this event:
 
-   - BASIC: Create two VMs, one on the host that is running the CVM you are shutting down, one on a host that will remain untouched. Begin a continuous ping between these VMs prior to issuing the shutdown command via SSH, and observe that there are no lost pings. Creating VMs is outlined in :ref:`vmmanage`
+   - BASIC: Create two VMs, one on the host that is running the CVM you are shutting down, one on a host that will remain untouched. Begin a continuous ping between these VMs prior to issuing the shutdown command via SSH, and observe that there are no lost pings.
 
-   - RECOMMENDED: Use X-ray to run OLTP or VDI workload. Setup of X-Ray is outlined in :ref:`xray`. Instructions for running the OLTP Simulator can be found in :ref:`xray3`.
-
+   - RECOMMENDED: Use X-ray to run OLTP or VDI workload.
 .. note::
 
    If you choose to run X-Ray on the same cluster you are performing failures on, it is recommended to avoid simulating the CVM failure on the same host that is running X-Ray.

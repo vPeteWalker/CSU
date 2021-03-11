@@ -7,15 +7,13 @@ HDD Failure
 
    This section describes a method to simulate a HDD failure that, while it works correctly using our testing, is not recommended by engineering. There will be a future version to simulate this using another method. It is recommended that you perform the steps within this section only if the POC absolutely requires this. These instructions will guide you with how to properly identify a disk with certainty, to simulate its failure, and add it back to the cluster once complete. However, be aware that you are using commands that if not entered correctly, could negatively impact your POC, and require involving support to rectify the issue.
 
-**CREATE A VIDEO STEPPING THROUGH THIS BECAUSE THERE COULD BE DRAGONS HERE?**
-
 In this section, we will be simulating a Hard Disk Drive (HDD) failure by executing a command that will simulate a degredation event for a hard disk that would normally happens over time under real world conditions. This is preferable to performing a "drive pull" test, as that is a very unlikely scenario. What is more likely, is a HDD to develop bad sectors or similar issues gradually over time, and as protecting customer data is vital, any infrastructure must handle this gracefully, and without interruption or loss.
 
 This test demonstrates the ability of Nutanix's AOS to immediately begin rebuilding additional copies of data on the surviving drives, as a high priority event, utilizing all nodes in the cluster to aid in that rebuild. This results in a restoration to full redundancy in a very short amount of time. Internal tests show that using several generation old equipment, Nutanix can rebuild 5TB worth of data within 45 minutes. This differs between other platforms in two major ways. One, we don't have a default wait period before rebuilding data, and two, Nutanix doesn't operate in a paired fashion, so we can take advantage of the distributed nature and combined performance of an entire Nutanix cluster to rebuild missing data quickly. In a nutshell, the rebuild is both very fast and the workload per node is minimized to avoid bottlenecks and to reduce the impact to running workload. Data rebuild time decreases with each additional node added to the cluster, as a result of our MapReduce Framework which leverages the full power of the cluster to perform these types of activities concurrently.
 
-   - BASIC: Create two VMs, one on the host that contains the HDD that the simulated failure will be performed on, one on a host that will remain untouched. Begin a continuous ping between these VMs prior to issuing the HDD failure commands, and observe that there are no lost pings. Creating VMs is outlined in :ref:`vmmanage`
+   - BASIC: Create two VMs, one on the host that contains the HDD that the simulated failure will be performed on, one on a host that will remain untouched. Begin a continuous ping between these VMs prior to issuing the HDD failure commands, and observe that there are no lost pings.
 
-   - RECOMMENDED: Use X-ray to run OLTP or VDI workload. Setup of X-Ray is outlined in :ref:`xray`. Instructions for running the OLTP Simulator can be found in :ref:`xray3`.
+   - RECOMMENDED: Use X-ray to run OLTP or VDI workload.
 
 .. note::
 

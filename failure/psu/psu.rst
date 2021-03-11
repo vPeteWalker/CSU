@@ -3,9 +3,6 @@
 Power Supply Failure (Physical POC only)
 ++++++++++++++++++++++++++++++++++++++++
 
-.. PW - Asked Scott Ellis for other hardware guide similar to the NX PSU redundancy guide.
-      - Rewrite below to have tables in the doc vs. pictures?
-
 In this section, we will be simulating a power failure by removing power from one of the power supplies on the cluster, and observe the behavior of the cluster.
 
 .. note::
@@ -38,9 +35,9 @@ There are two example scenarios you can run to demonstrate the cluster resilienc
 
    - RECOMMENDED: Use X-ray to run OLTP or VDI workload.
 
-   - BASIC: Create as many VMs as there are hosts. Begin a continuous ping between each VM to another VM, prior to issuing the shutdown command via SSH, and observe that there are no lost pings. Creating VMs is outlined in :ref:`vmmanage`
+   - BASIC: Create as many VMs as there are hosts. Begin a continuous ping between each VM to another VM, prior to issuing the shutdown command via SSH, and observe that there are no lost pings.
 
-   - RECOMMENDED: Use X-ray to run OLTP or VDI workload. Setup of X-Ray is outlined in :ref:`xray`. Instructions for running the OLTP Simulator can be found in :ref:`xray3`.
+   - RECOMMENDED: Use X-ray to run OLTP or VDI workload.
 
 #. Identify the physical power supply cord on the node you wish to remove as a part of this test. This can also be performed remotely if the customer has the ability to control individual sockets on their Power Distribution Unit (PDU), and you've confirmed the associated sockets connected to the node being tested.
 

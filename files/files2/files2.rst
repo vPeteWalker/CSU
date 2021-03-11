@@ -4,12 +4,6 @@
 SMB File Share
 --------------
 
-**Prerequisites:** Completion of :ref:`vmmanage`
-
-**Expected Module Duration:** 45 minutes
-
-**Covered Test IDs:** N/A
-
 Creating an SMB File Share
 ++++++++++++++++++++++++++
 
@@ -119,7 +113,7 @@ During this exercise, you will:
    - Populate that network share with sample data (used for Files Analytics testing).
    - Test the file blocking feature of files.
 
-#. We will be utilizing the **WinServer-2** VM previously created in the :ref:`vmmanage` section. Within Prism, make note of its IP address.
+#. We will be utilizing the **WinServer-2** VM previously created. Within Prism, make note of its IP address.
 
 #. Launch the console for **WinServer-2**, and log in as the **Administrator** account.
 
@@ -410,7 +404,7 @@ During this exercise, you will explore the new, integrated File Analytics capabi
 
 #. Choose **OK** then **OK** again
 
-#. Open a PowerShell window as another non-Administrator user account (ex. User01 - full listed provided in ref:`prereqs`) by holding **Shift** and right-clicking the **PowerShell** icon in the start menu and selecting **More > Run as a different user**.
+#. Open a PowerShell window as another non-Administrator user account by holding **Shift** and right-clicking the **PowerShell** icon in the start menu and selecting **More > Run as a different user**.
 
    .. figure:: images/24.png
 

@@ -10,12 +10,6 @@ Files uses a scale-out architecture that provides file services to clients throu
 
 In this module you will deploy Files and Files analytics, providing the foundation for creating, configuring, and testing SMB shares and NFS exports.
 
-**Prerequisites:** Completion of :ref:`vmmanage`
-
-**Expected Module Duration:** 60 minutes
-
-**Covered Test IDs:** N/A
-
 .. note::
 
    Review `NUTANIX FILES GUIDE <https://portal.nutanix.com/page/documents/details/?targetId=Files-v35:Files-v35>`_ and `FILE ANALYTICS GUIDE <https://portal.nutanix.com/page/documents/details/?targetId=File-Analytics-v2_1%3AFile-Analytics-v2_1>`_ for all details including, but not limited to, prerequities, requirements, and recommendations before proceeding.
@@ -46,8 +40,6 @@ There are many options at various stages that are available to configure Files t
    Please be aware that any information such as server names, IP addresses, and similar information contained within any screen shots are strictly for demonstration purposes. Do not use these values when proceeding with any of the steps contained within this workshop.
 
    You are welcome to vary your inputs compared to the instructions listed below, please be aware that by diverting from these instructions, you may negatively impact your ability to successfully complete this workshop.
-
-   Refer to :ref:`ntnxlab` for details on AD Security Groups, user accounts, and passwords when using the AutoAD VM.
 
 Creating a File Server
 ++++++++++++++++++++++

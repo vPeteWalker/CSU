@@ -11,6 +11,7 @@
    lab_network_configuration/lab_network_configuration
    lab_deploy_workloads/lab_deploy_workloads
    lab_manage_workloads/lab_manage_workloads
+   lab_data_protection/lab_data_protection
 
 .. toctree::
    :maxdepth: 2
@@ -46,11 +47,7 @@
 
    failure/failure
    failure/cvm/cvm
-   failure/hdd/hdd
-   failure/nic/nic
    failure/node/node
-   failure/power/power
-   failure/psu/psu
 
 .. _getting_started:
 
